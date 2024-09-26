@@ -5,7 +5,7 @@ function feedback(action, status) {
     //Aram ID
     //use this for production
     let chat_id = "1329475336";
-    let user_phone = prompt('Введите для Discord name контакта с вами');
+    let user_phone = prompt('Введите Discord для контакта с вами');
     var msg = `${action} от ${user_phone}`;// from ${getCookie("@")}`;
     var url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${msg}&parse_mode=html`;
   
